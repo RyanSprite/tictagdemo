@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (3.2.0):
+    - AFNetworking/NSURLSession (= 3.2.0)
+    - AFNetworking/Reachability (= 3.2.0)
+    - AFNetworking/Security (= 3.2.0)
+    - AFNetworking/Serialization (= 3.2.0)
+    - AFNetworking/UIKit (= 3.2.0)
+  - AFNetworking/NSURLSession (3.2.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.0)
+  - AFNetworking/Security (3.2.0)
+  - AFNetworking/Serialization (3.2.0)
+  - AFNetworking/UIKit (3.2.0):
+    - AFNetworking/NSURLSession
+  - MQTTClient (0.13.0):
+    - MQTTClient/Core (= 0.13.0)
+  - MQTTClient/Core (0.13.0):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.13.0):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.13.0)
+  - SSZipArchive (2.1.1)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - AFNetworking
+  - MQTTClient
+  - SSZipArchive
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - MQTTClient
+    - SSZipArchive
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  AFNetworking: 8ac6017b94ea105479f7776e5288e48ae9c59bb4
+  MQTTClient: aced164e080fb139daa98fc745d01da279e55945
+  SSZipArchive: 14401ade5f8e82aba1ff03e9f88e9de60937ae60
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 22724d50be8a27980966e91965ed93af56a7ab14
+
+COCOAPODS: 1.5.0.beta.1

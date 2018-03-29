@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B9FE0C9DB78FCBBC507D777 /* libPods-TicTagDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4032B1050544B7EF5A2852F /* libPods-TicTagDemo.a */; };
+		DD411BB92065507A00A07CEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD411BB82065507A00A07CEB /* AppDelegate.m */; };
+		DD411BBC2065507A00A07CEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD411BBB2065507A00A07CEB /* ViewController.m */; };
+		DD411BBF2065507A00A07CEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD411BBD2065507A00A07CEB /* Main.storyboard */; };
+		DD411BC12065507A00A07CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD411BC02065507A00A07CEB /* Assets.xcassets */; };
+		DD411BC42065507A00A07CEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD411BC22065507A00A07CEB /* LaunchScreen.storyboard */; };
+		DD411BC72065507A00A07CEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD411BC62065507A00A07CEB /* main.m */; };
+		DD411BEB2066A4D900A07CEB /* TicTagSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD411BEA2066A4D900A07CEB /* TicTagSDK.framework */; };
+		DD411BED2066AB2300A07CEB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DD411BEC2066AB2200A07CEB /* libc++.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EB6981C4C2BF6EEB9FF276C /* Pods-TicTagDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTagDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicTagDemo/Pods-TicTagDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5708D440E02E092755D79E6C /* Pods-TicTagDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTagDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicTagDemo/Pods-TicTagDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D4032B1050544B7EF5A2852F /* libPods-TicTagDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTagDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD411BB42065507A00A07CEB /* TicTagDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTagDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD411BB72065507A00A07CEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD411BB82065507A00A07CEB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD411BBA2065507A00A07CEB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD411BBB2065507A00A07CEB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD411BBE2065507A00A07CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD411BC02065507A00A07CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD411BC32065507A00A07CEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD411BC52065507A00A07CEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD411BC62065507A00A07CEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD411BEA2066A4D900A07CEB /* TicTagSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TicTagSDK.framework; sourceTree = "<group>"; };
+		DD411BEC2066AB2200A07CEB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD411BB12065507A00A07CEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD411BED2066AB2300A07CEB /* libc++.tbd in Frameworks */,
+				DD411BEB2066A4D900A07CEB /* TicTagSDK.framework in Frameworks */,
+				3B9FE0C9DB78FCBBC507D777 /* libPods-TicTagDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		712932E86A9A95C868C6143E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD411BEC2066AB2200A07CEB /* libc++.tbd */,
+				D4032B1050544B7EF5A2852F /* libPods-TicTagDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD411BAB2065507A00A07CEB = {
+			isa = PBXGroup;
+			children = (
+				DD411BB62065507A00A07CEB /* TicTagDemo */,
+				DD411BB52065507A00A07CEB /* Products */,
+				DE7DB6F48BF2CD6A54AB9004 /* Pods */,
+				712932E86A9A95C868C6143E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD411BB52065507A00A07CEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD411BB42065507A00A07CEB /* TicTagDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD411BB62065507A00A07CEB /* TicTagDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DD411BEA2066A4D900A07CEB /* TicTagSDK.framework */,
+				DD411BB72065507A00A07CEB /* AppDelegate.h */,
+				DD411BB82065507A00A07CEB /* AppDelegate.m */,
+				DD411BBA2065507A00A07CEB /* ViewController.h */,
+				DD411BBB2065507A00A07CEB /* ViewController.m */,
+				DD411BBD2065507A00A07CEB /* Main.storyboard */,
+				DD411BC02065507A00A07CEB /* Assets.xcassets */,
+				DD411BC22065507A00A07CEB /* LaunchScreen.storyboard */,
+				DD411BC52065507A00A07CEB /* Info.plist */,
+				DD411BC62065507A00A07CEB /* main.m */,
+			);
+			path = TicTagDemo;
+			sourceTree = "<group>";
+		};
+		DE7DB6F48BF2CD6A54AB9004 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5708D440E02E092755D79E6C /* Pods-TicTagDemo.debug.xcconfig */,
+				0EB6981C4C2BF6EEB9FF276C /* Pods-TicTagDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD411BB32065507A00A07CEB /* TicTagDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD411BCA2065507A00A07CEB /* Build configuration list for PBXNativeTarget "TicTagDemo" */;
+			buildPhases = (
+				D750472A346A78A4182E8AC3 /* [CP] Check Pods Manifest.lock */,
+				DD411BB02065507A00A07CEB /* Sources */,
+				DD411BB12065507A00A07CEB /* Frameworks */,
+				DD411BB22065507A00A07CEB /* Resources */,
+				92893DE2C2AEE83337011C12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicTagDemo;
+			productName = TicTagDemo;
+			productReference = DD411BB42065507A00A07CEB /* TicTagDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD411BAC2065507A00A07CEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "陈宇";
+				TargetAttributes = {
+					DD411BB32065507A00A07CEB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DD411BAF2065507A00A07CEB /* Build configuration list for PBXProject "TicTagDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD411BAB2065507A00A07CEB;
+			productRefGroup = DD411BB52065507A00A07CEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD411BB32065507A00A07CEB /* TicTagDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD411BB22065507A00A07CEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD411BC42065507A00A07CEB /* LaunchScreen.storyboard in Resources */,
+				DD411BC12065507A00A07CEB /* Assets.xcassets in Resources */,
+				DD411BBF2065507A00A07CEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92893DE2C2AEE83337011C12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TicTagDemo/Pods-TicTagDemo-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicTagDemo/Pods-TicTagDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D750472A346A78A4182E8AC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicTagDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD411BB02065507A00A07CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD411BBC2065507A00A07CEB /* ViewController.m in Sources */,
+				DD411BC72065507A00A07CEB /* main.m in Sources */,
+				DD411BB92065507A00A07CEB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD411BBD2065507A00A07CEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD411BBE2065507A00A07CEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD411BC22065507A00A07CEB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD411BC32065507A00A07CEB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD411BC82065507A00A07CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD411BC92065507A00A07CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD411BCB2065507A00A07CEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5708D440E02E092755D79E6C /* Pods-TicTagDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YE253S43Q9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TicTagDemo",
+				);
+				INFOPLIST_FILE = TicTagDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.huabao.TicTagDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD411BCC2065507A00A07CEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB6981C4C2BF6EEB9FF276C /* Pods-TicTagDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YE253S43Q9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TicTagDemo",
+				);
+				INFOPLIST_FILE = TicTagDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.huabao.TicTagDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD411BAF2065507A00A07CEB /* Build configuration list for PBXProject "TicTagDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD411BC82065507A00A07CEB /* Debug */,
+				DD411BC92065507A00A07CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD411BCA2065507A00A07CEB /* Build configuration list for PBXNativeTarget "TicTagDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD411BCB2065507A00A07CEB /* Debug */,
+				DD411BCC2065507A00A07CEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD411BAC2065507A00A07CEB /* Project object */;
+}
