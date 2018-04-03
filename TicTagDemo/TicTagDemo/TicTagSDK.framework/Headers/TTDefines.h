@@ -11,13 +11,7 @@
 
 #define FWUPDATE @"HBFWUPDATE"
 #define HWUPDATE @"HBHWUPDATE"
-
-typedef void(^gpsCollectBlock)(NSString* nowtime,CGFloat longitude,CGFloat latitude);
-typedef void(^iBeaconBlock)(NSString * electric,NSString *clickTimes);
-typedef void(^successBlock)(void);
-typedef void (^failBlock)(void);
-typedef void(^disBindBlock)(void);
-typedef void(^userAlertBlock)(NSString *clickTimes);
+#define BlueToothStateChange @"BlueToothStateChange"
 
 typedef enum : NSUInteger {
     State_Unbind,
@@ -25,5 +19,14 @@ typedef enum : NSUInteger {
     State_DataSyncing,
     State_DISCONNECTED,
 } TicTagState;
+
+typedef void(^gpsCollectBlock)(NSString* nowtime,CGFloat longitude,CGFloat latitude);
+typedef void(^iBeaconBlock)(NSString * electric,NSString *clickTimes);
+typedef void(^successBlock)(void);
+typedef void (^failBlock)(void);
+typedef void(^disBindBlock)(void);
+typedef void(^userAlertBlock)(NSString *clickTimes);
+typedef void(^changeState)(TicTagState state);
+
 
 #endif /* TTDefines_h */

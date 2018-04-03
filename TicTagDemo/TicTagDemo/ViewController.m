@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *batteryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *clickTimesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 
 @end
 
@@ -37,6 +38,38 @@
     if (self.ticSDK.name) {
         self.tictagName.text = self.ticSDK.name;
     }
+    [self.ticSDK receiveGPSBlock:^(NSString *nowtime, CGFloat longitude, CGFloat latitude) {
+        self.locationLabel.text = [NSString stringWithFormat:@"longitude = %f\nlatitude = %f",longitude,latitude];
+    }];
+    
+    [self.ticSDK stateChanged:^(TicTagState state) {
+        switch (state) {
+            case State_Connected:
+            {
+                NSLog(@"State_Connected");
+            }
+                break;
+            case State_DISCONNECTED:
+            {
+                NSLog(@"State_DISCONNECTED");
+            }
+                break;
+            case State_DataSyncing:
+            {
+                NSLog(@"State_DataSyncing");
+            }
+            case State_Unbind:
+            {
+                NSLog(@"State_Unbind");
+            }
+                break;
+            default:
+                break;
+        }
+    }];
+    [self.ticSDK receiveUserAlert:^(NSString *clickTimes) {
+        weakSelf.clickTimesLabel.text = clickTimes;
+    }];
 }
 
 - (IBAction)startSearch:(id)sender {
@@ -141,6 +174,7 @@
         weakSelf.batteryLabel.text = @"--";
         weakSelf.clickTimesLabel.text = @"0";
         weakSelf.tictagName.text = @"Unbind";
+        weakSelf.locationLabel.text = @"--";
     };
 }
 

@@ -20,6 +20,19 @@
 @property (nonatomic,copy) disBindBlock disBindBlock;
 @property (nonatomic,copy) userAlertBlock userAlertBlock;
 @property (nonatomic,copy) gpsCollectBlock gpsCollectBlock;
+@property (nonatomic,copy) changeState changeState;
+
+
+
+/**
+ Current device isBind
+ */
+@property (nonatomic,readonly) BOOL isBind;
+
+/**
+ iphone bluetooth is power on
+ */
+@property (nonatomic,readonly) BOOL isPowerOn;
 
 /**
  Current device name
@@ -31,6 +44,10 @@
  */
 @property (nonatomic,readonly) NSString *uuid;
 
+/**
+ Current device Bind time
+ */
+@property (nonatomic,readonly) NSString *bindTime;
 
 /**
  Current device power Range:0~100%
@@ -59,18 +76,20 @@
  */
 @property (nonatomic,readonly) CBPeripheral *currentPeripheral;
 
-
+/**
+ Current  TicTag state
+ */
 @property (nonatomic,readonly) TicTagState ticTagState;
 
 /**
  nearCarTimeout info
  */
-@property (nonatomic,readonly) int nearCarTimeout;
+@property (nonatomic,assign) int nearCarTimeout;
 
 /**
  nearCarTimeout info
  */
-@property (nonatomic,readonly) int gpsUploadInterval;
+@property (nonatomic,assign) int gpsUploadInterval;
 
 /**
  powerSavingMode Can save you a lot of electricity ,default is 1,if you want to close it,please set 0
@@ -125,6 +144,11 @@
  TicTag GPS 回调 block |  when bind TicTag
  */
 - (void)receiveGPSBlock:(gpsCollectBlock)gpsBlock;
+
+/**
+ TicTag StateChange 回调 block |  when bind TicTag
+ */
+- (void)stateChanged:(changeState)changeBlock;
 
 
 @end
